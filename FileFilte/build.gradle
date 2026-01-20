@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+// Настройка Java
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+// Основной класс для запуска
+application {
+    mainClass = 'com.example.filefilter.Main'
+}
+
+// Репозитории
+repositories {
+    mavenCentral()
+}
+
+// Зависимости (для тестов, если понадобятся)
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+// Настройка JAR-файла (чтобы можно было запускать через java -jar)
+jar {
+    manifest {
+        attributes 'Main-Class': application.mainClass.get()
+    }
+}
