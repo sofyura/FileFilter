@@ -32,12 +32,7 @@
 ├── build.gradle
 ├── settings.gradle
 ├── README.md
-└── src/
-    └── main/
-        └── java/
-            └── com/
-                └── example/
-                    └── filefilter/
+└── src/main/java/com/example/filefilter/
                         ├── Main.java
                         ├── cli/
                         │   └── ArgParser.java
