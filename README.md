@@ -29,25 +29,25 @@
 
 # Структура проекта
     file-filter/
-├── build.gradle
-├── settings.gradle
-├── README.md
-└── src/main/java/com/example/filefilter/
-                        ├── Main.java
-                        ├── cli/
-                        │   └── ArgParser.java
-                        ├── core/
-                        │   ├── DataClassifier.java
-                        │   └── FileProcessor.java
-                        ├── io/
-                        │   └── ResultWriter.java
-                        ├── stats/
-                        │   ├── Statistics.java
-                        │   └── StatisticsPrinter.java
-                        ├── exception/          
-                        │   └── ErrorHandler.java
-                        └── constants/          
-                            └── AppConstants.java
+    ├── build.gradle
+    ├── settings.gradle
+    ├── README.md
+    └── src/main/java/com/example/filefilter/
+                                    ├── Main.java
+                                    ├── cli/
+                                    │   └── ArgParser.java
+                                    ├── core/
+                                    │   ├── DataClassifier.java
+                                    │   └── FileProcessor.java
+                                    ├── io/
+                                    │   └── ResultWriter.java
+                                    ├── stats/
+                                    │   ├── Statistics.java
+                                    │   └── StatisticsPrinter.java
+                                    ├── exception/          
+                                    │   └── ErrorHandler.java
+                                    └── constants/          
+                                        └── AppConstants.java
 
 # Инструкция по запуску
     Вариант 1: Без системы сборки (рекомендуется для проверки)
